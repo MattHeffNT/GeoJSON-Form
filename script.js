@@ -26,9 +26,14 @@
       // GeoJson textbox
       let output = document.querySelector('#output')
 
-
+      // marker lat/long
       var LatiLongi = this.getLatLng();
+      var Lat = LatiLongi.lat
+      var lng = LatiLongi.lng
 
+      // var LatiLongi = JSON.stringify(LatiLongi);
+
+      console.log(LatiLongi)
 
       output.innerHTML =
 
@@ -41,11 +46,10 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-          ${LatiLongi}
+          ${Lat},${lng}
           ]
         }
       }
    `
-      event.preventDefault();
 
     }
