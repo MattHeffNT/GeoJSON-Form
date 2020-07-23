@@ -1,0 +1,36 @@
+.container {
+    border-style:solid;
+    width:100%;
+    text-align:center;
+    background-color:#913832;
+    padding-bottom:1em;
+    position: fixed;
+    height:50em;
+  }
+  
+  label {
+    color:white;
+  }
+  
+  #output {
+    padding-bottom:1em;
+    margin-bottom:1em;
+    width:20em;
+    height:10em;
+  }
+
+  #col-2 {
+    width:10%;
+  }
+
+#poem {
+    
+    width:70%;
+    height:40%;
+
+}
+
+#map {
+  margin-top: 5em;
+  height: 400px; 
+}  
