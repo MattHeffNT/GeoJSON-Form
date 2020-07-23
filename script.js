@@ -1,24 +1,28 @@
-    // start of map shit 
-    var mapOptions = {
-      center: [-12.415932, 134.244268],
-      zoom: 5
-    }
-    var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
-    var map = new L.map('map', mapOptions);
-    map.addLayer(layer);
+document.querySelector('#submit').addEventListener("click",populate);
 
-    var markerOptions = {
-      title: "MyLocation",
-      clickable: true,
-      draggable: true,
+  // start of map shit 
+  var mapOptions = {
+    center: [-12.415932, 134.244268],
+    zoom: 5
+  }
+  var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  var map = new L.map('map', mapOptions);
+  map.addLayer(layer);
 
-    }
+  var markerOptions = {
+    title: "MyLocation",
+    clickable: true,
+    draggable: true,
+  }
+  
+  var marker = L.marker([-12.415932, 134.244268], markerOptions);
+  marker.addTo(map);
 
-    var marker = L.marker([-12.415932, 134.244268], markerOptions).on('click', derulo);
-    marker.addTo(map);
+    function populate(event) {
 
 
-    function derulo(event) {
+
+
 
       let name = document.querySelector('#name').value;
       let poem = document.querySelector('#poem').value;
@@ -27,11 +31,9 @@
       let output = document.querySelector('#output')
 
       // marker lat/long
-      var LatiLongi = this.getLatLng();
+      var LatiLongi = marker.getLatLng();
       var Lat = LatiLongi.lat
       var lng = LatiLongi.lng
-
-      // var LatiLongi = JSON.stringify(LatiLongi);
 
       console.log(LatiLongi)
 
