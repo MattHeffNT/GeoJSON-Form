@@ -46,7 +46,7 @@
         "geometry": {
           "type": "Point",
           "coordinates": [
-          ${Lat},${lng}
+          ${Lat},\n\t${lng}
           ]
         }
       }
