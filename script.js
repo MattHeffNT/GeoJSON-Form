@@ -1,6 +1,6 @@
 document.querySelector('#submit').addEventListener("click",populate);
 
-  // start of map shit 
+  // start of map
   let mapOptions = {
     center: [-12.415932, 134.244268],
     zoom: 5
@@ -22,35 +22,35 @@ document.querySelector('#submit').addEventListener("click",populate);
   let marker = L.marker([-12.415932, 134.244268], markerOptions);
   marker.addTo(map);
 
-    function populate(event) {
+  function populate(event) {
 
-      let name = document.querySelector('#name').value;
-      let poem = document.querySelector('#poem').value;
+    let name = document.querySelector('#name').value;
+    let poem = document.querySelector('#poem').value;
 
-      // GeoJson textbox
-      let output = document.querySelector('#output');
+    // GeoJson textbox
+    let output = document.querySelector('#output');
 
-      // marker lat/long
-      let LatiLongi = marker.getLatLng();
-      let Lat = LatiLongi.lat;
-      let lng = LatiLongi.lng;
+    // marker lat/long
+    let LatiLongi = marker.getLatLng();
+    let Lat = LatiLongi.lat;
+    let lng = LatiLongi.lng;
 
-      console.log(LatiLongi);
+    console.log(LatiLongi);
 
-      output.innerHTML =
+    output.innerHTML =
 
-        ` {
-      "type": "Feature",
-        "properties": {
-            "Name": "${name}",
-            "Poem": "${poem}"
-        },
-        "geometry": {
-          "type": "Point",
-          "coordinates": [
-          ${Lat},\n\t${lng}
-          ]
-        }
+      ` {
+    "type": "Feature",
+      "properties": {
+          "Name": "${name}",
+          "Poem": "${poem}"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        ${Lat},\n\t${lng}
+        ]
       }
-   `
+  }
+  `
     }
