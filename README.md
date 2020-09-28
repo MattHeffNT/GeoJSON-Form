@@ -4,3 +4,8 @@ a form front end and dynamic map marker that populates a geoJSON feature and pro
 ## Link to form
 
 https://mattheffnt.github.io/GeoJSON-Form/
+
+## TO DO
+
+- update stlying
+- add code for MailerJS script
