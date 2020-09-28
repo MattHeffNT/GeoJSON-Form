@@ -1,36 +1,67 @@
 .container {
-    border-style:solid;
-    width:100%;
-    text-align:center;
-    background-color:#913832;
-    padding-bottom:1em;
-    position: fixed;
-    height:50em;
-  }
-  
-  label {
-    color:white;
-  }
-  
-  #output {
-    padding-bottom:1em;
-    margin-bottom:1em;
-    width:20em;
-    height:10em;
-  }
+  border-style:solid;
+  width:100%;
+  text-align:center;
+  background-color:#913832;
+  padding-bottom:1em;
+  /* height:50em; */
+  padding-bottom: 3em;
+}
 
-  #col-2 {
-    width:10%;
-  }
+.g-recaptcha {
+  display: inline-block;
+}
+
+label {
+  color:white;
+}
+
+#output {
+  padding-bottom:1em;
+  margin-bottom:1em;
+  width:20em;
+  height:10em;
+	display:none;
+}
+
+#col-2 {
+  width:10%;
+}
 
 #poem {
-    
-    width:70%;
-    height:40%;
+  
+  width:70%;
+  padding-bottom: 10em;
 
 }
 
 #map {
-  margin-top: 5em;
-  height: 400px; 
-}  
+margin-top: 3em;
+height: 400px; 
+} 
+.btn-primary {
+  margin-top:1em;
+}
+
+/* media query */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  #output {
+    width:15em;
+		display:none;
+  }
+
+  .container {
+    overflow:scroll;
+  }
+
+  #poem {
+    width:85%;
+  }
+	
+	#submit {
+		width: 30% !important;
+	}
+
+}
