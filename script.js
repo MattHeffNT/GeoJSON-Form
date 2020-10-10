@@ -1,7 +1,5 @@
-$(function() {
-  $('#basicExampleModal').modal('show');
-});
 
+  // var map = document.querySelector('#map')
   // start of map
   let mapOptions = {
     center: [-23.70057203555527, 133.8762187957764],
@@ -46,7 +44,7 @@ $(function() {
 
     // console.log(LatiLongi);
 
-    output.innerHTML =
+    output.value =
 
       ` {
     "type": "Feature",
@@ -88,26 +86,25 @@ $(function() {
       var template_params = {
         "reply_to": "reply_to_value",
         "from_name": `${name}`,
-        "to_name": "X",
+        "to_name": "Red Dirt",
         "message_html": `${output.innerHTML}`
       }
     
       var service_id = "default_service";
       var template_id = "template_X7N43Tuw";
     
-      if (poem.length > 0) {
+      // if (poem.length > 0) {
         
-          // uncomment the line below to enable email of the form        
-         // emailjs.send(service_id, template_id, template_params);
+      //   emailjs.send(service_id, template_id, template_params);
 
-        var button = document.querySelector('#submit')
-        button.style = "background-color:#70b955;border-style:none !important;width:10%;"
-        button.innerText = "Sent";
+      //   var button = document.querySelector('#submit')
+      //   button.style = "background-color:#70b955;border-style:none !important;width:10%;"
+      //   button.innerText = "Sent";
 
-        console.log(`${output.innerHTML}`);
+      //   console.log(`${output.innerHTML}`);
 
-      } else {
-        console.log("issue with sending email");
-      }
+      // } else {
+      //   console.log("issue with sending email");
+      // }
     
     }

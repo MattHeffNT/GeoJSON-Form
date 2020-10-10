@@ -1,3 +1,8 @@
+/* ========= INFORMATION ============================
+	- document:  WP Coder!
+	- author:    Dmytro Lobov 
+	- url:       https://wow-estore.com/
+==================================================== */
 .container {
   border-style:solid;
   width:100%;
@@ -21,7 +26,7 @@ label {
   margin-bottom:1em;
   width:20em;
   height:10em;
-	display:none;
+	/* display:none; */
 }
 
 #col-2 {
@@ -39,6 +44,7 @@ label {
 margin-top: 3em;
 height: 400px; 
 } 
+
 .btn-primary {
   margin-top:1em;
 }

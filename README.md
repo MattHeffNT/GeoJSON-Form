@@ -9,3 +9,4 @@ https://mattheffnt.github.io/GeoJSON-Form/
 
 - update stlying
 - add code for MailerJS script
+- branch for React version of this with nice wsywig and stuff
